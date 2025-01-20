@@ -6,10 +6,12 @@ public class Main {
 
     public static void GenerateNPC(){
         NPC npc1 = new NPC("John Doe", 1);
-        npc1.DisplayNPCInfo();
+        //npc1.DisplayNPCInfo();
+
         System.out.println("----------------------------------");
+
         NPC npc2 = new NPC("Johny Foe", 2);
-        npc2.DisplayNPCInfo();
+        //npc2.DisplayNPCInfo();
     }
 
 

@@ -1,3 +1,4 @@
+package EnumClasses;
 public enum HobbyType{
     ArtsAndCreativity, // 0
     SportsAndActivities, // 1

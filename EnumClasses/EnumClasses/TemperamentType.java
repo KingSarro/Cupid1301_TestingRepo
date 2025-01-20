@@ -1,3 +1,4 @@
+package EnumClasses;
 public enum TemperamentType{
     Introversion, // 0 - Introvert vs Extrovert
     Optimism, // 1 - Optimist vs Pessimist

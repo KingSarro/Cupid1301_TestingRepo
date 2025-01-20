@@ -1,4 +1,4 @@
-import Cupid1301_TestingRepo\EnumClasses;
+import EnumClasses.*;
 
 public class NPC{
 
@@ -12,16 +12,21 @@ public class NPC{
     private AssertivenessType assertiveness;
     private ResponsibilityType responsibility;
 
+    /* 
+    //*Can't initialize enums, have to have a start value!
+    //*Probably what I can do is set the default value, then randomly flip values, (then set their intensity?)
+    */
+
     public NPC(String name, int id){
         this.name = name;
         this.id = id;
-        GeneratePersonality();
+        //GeneratePersonality();
         //GenerateTemperaments();
     }
 
     private void GeneratePersonality(){
         //Randomly generate personality traits
-        int personalityCount = PersonalityType.values().length;
+        int personalityCount = PersonalityType.personalityTypes.length;
         // Create an array to hold the personality values.
         int[] personalityValues = new int[personalityCount];
         ////System.out.println("Debug: personality count = " + personalityCount);
@@ -107,10 +112,13 @@ public class NPC{
         //Display the NPC's information
         System.out.println("This is NPC: " + name + ", ID: " + id);
         //System.out.println("Personality Traits: " + highPersonalityTypes[0].name() + ", " + highPersonalityTypes[1].name());
-        System.out.println("Personality Traits: " + energy.name() + ", " + playfulness.name() + ", " + agreeableness.name() + ", " + assertiveness.name() + ", " + responsibility);
-        // for(int i = 0; i < temperamentValues.length; i++){
-        //     System.out.println(TemperamentType.values()[i].name() + ": " + temperamentValues[i]);
-        // }
+        
+        
+        
+        // System.out.println("Personality Traits: " + energy.name() + ", " + playfulness.name() + ", " + agreeableness.name() + ", " + assertiveness.name() + ", " + responsibility);
+        // // for(int i = 0; i < temperamentValues.length; i++){
+        // //     System.out.println(TemperamentType.values()[i].name() + ": " + temperamentValues[i]);
+        // // }
     }
 
 }
